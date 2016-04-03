@@ -5,6 +5,7 @@
   "main": "dist/react-intl-native.js",
   "jsnext:main": "dist/react-intl-native.es2015.js",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "rollup-babel-lib-bundler -f cjs,es6 src/index.js",
     "prepublish": "in-publish && npm run build || not-in-publish",
     "lint": "eslint src",
@@ -73,6 +74,7 @@
     "nyc": "^6.1.1",
     "react-addons-test-utils": "^0.14.8",
     "react-dom": "^0.14.8",
+    "rimraf": "^2.5.2",
     "rollup-babel-lib-bundler": "^2.5.5"
   }
 }
