@@ -1,7 +1,14 @@
-import React, { Text } from 'react-native';
-import { RawFormattedNumber } from 'react-intl-rawformat';
+import React, { PropTypes, Text } from 'react-native';
+import Intl from 'react-intl';
 
-const FormattedNumber = props =>
-  <RawFormattedNumber component={Text} {...props} />;
+const FormattedNumber = props => (
+  <Intl.FormattedNumber {...props}>
+    {localized => <Text style={props.style}>{localized}</Text>}
+  </Intl.FormattedNumber>
+);
+
+FormattedNumber.propTypes = {
+  style: PropTypes.any,
+};
 
 export default FormattedNumber;

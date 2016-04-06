@@ -1,7 +1,14 @@
-import React, { Text } from 'react-native';
-import { RawFormattedMessage } from 'react-intl-rawformat';
+import React, { PropTypes, Text } from 'react-native';
+import Intl from 'react-intl';
 
-const FormattedMessage = props =>
-  <RawFormattedMessage component={Text} {...props} />;
+const FormattedMessage = props => (
+  <Intl.FormattedMessage {...props}>
+    {localized => <Text style={props.style}>{localized}</Text>}
+  </Intl.FormattedMessage>
+);
+
+FormattedMessage.propTypes = {
+  style: PropTypes.any,
+};
 
 export default FormattedMessage;

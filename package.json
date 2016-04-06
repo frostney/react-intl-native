@@ -54,7 +54,6 @@
   "homepage": "https://github.com/frostney/react-intl-native#readme",
   "dependencies": {
     "react-intl": "^2.0.0-rc-1",
-    "react-intl-rawformat": "^1.0.2",
     "react-native": "^0.22.2"
   },
   "devDependencies": {
@@ -65,6 +64,7 @@
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2015-loose": "^7.0.0",
     "babel-preset-es2015-loose-rollup": "^7.0.0",
+    "babel-preset-react": "^6.5.0",
     "babel-register": "^6.7.2",
     "codecov": "^1.0.1",
     "enzyme": "^2.2.0",
