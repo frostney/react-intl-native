@@ -54,7 +54,7 @@
   "homepage": "https://github.com/frostney/react-intl-native#readme",
   "dependencies": {
     "react-intl": "^2.0.0-rc-1",
-    "react-native": "^0.22.2"
+    "react-native": "^0.23.0"
   },
   "devDependencies": {
     "ava": "^0.13.0",
@@ -70,7 +70,7 @@
     "enzyme": "^2.2.0",
     "eslint": "^2.6.0",
     "eslint-config-airbnb": "^6.2.0",
-    "eslint-plugin-react": "^4.2.3",
+    "eslint-plugin-react": "^4.3.0",
     "in-publish": "^2.0.0",
     "nyc": "^6.1.1",
     "react-addons-test-utils": "^0.14.8",
