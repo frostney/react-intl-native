@@ -15,6 +15,7 @@ const FormattedNumber = props => {
     maximumFractionDigits: props.maximumFractionDigits,
     minimumSignificantDigits: props.minimumSignificantDigits,
     maximumSignificantDigits: props.maximumSignificantDigits,
+    value: props.value,
   };
 
   return (
@@ -36,6 +37,7 @@ FormattedNumber.propTypes = {
   maximumFractionDigits: PropTypes.any,
   minimumSignificantDigits: PropTypes.any,
   maximumSignificantDigits: PropTypes.any,
+  value: PropTypes.any,
 };
 
 export default FormattedNumber;
