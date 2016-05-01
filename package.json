@@ -1,6 +1,6 @@
 {
   "name": "react-intl-native",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Convenience components for react-intl's `format*` API in React Native",
   "main": "dist/react-intl-native.js",
   "jsnext:main": "dist/react-intl-native.es2015.js",
@@ -54,8 +54,8 @@
   "homepage": "https://github.com/frostney/react-intl-native#readme",
   "dependencies": {
     "react": "^0.14.8",
-    "react-intl": "^2.0.0-rc-1",
-    "react-native": "^0.23.0"
+    "react-intl": "^2.1.2",
+    "react-native": "^0.24.1"
   },
   "devDependencies": {
     "ava": "^0.14.0",
