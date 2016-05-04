@@ -23,6 +23,8 @@
     "react-intl",
     "intl",
     "i18n",
+    "internationalization",
+    "internationalisation",
     "ios",
     "android"
   ],
