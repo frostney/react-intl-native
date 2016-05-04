@@ -53,9 +53,7 @@
   },
   "homepage": "https://github.com/frostney/react-intl-native#readme",
   "dependencies": {
-    "react": "^0.14.8",
-    "react-intl": "^2.1.2",
-    "react-native": "^0.24.1"
+    "react-intl": "^2.1.2"
   },
   "devDependencies": {
     "ava": "^0.14.0",
@@ -76,8 +74,10 @@
     "eslint-plugin-react": "^5.0.1",
     "in-publish": "^2.0.0",
     "nyc": "^6.4.0",
+    "react": "^0.14.8",
     "react-addons-test-utils": "^0.14.8",
     "react-dom": "^0.14.8",
+    "react-native": "^0.24.1",
     "rimraf": "^2.5.2",
     "rollup-babel-lib-bundler": "^2.5.5"
   }
