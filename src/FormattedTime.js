@@ -1,4 +1,5 @@
-import React, { PropTypes, Text } from 'react-native';
+import React, { PropTypes } from 'react';
+import { Text } from 'react-native';
 import Intl from 'react-intl';
 
 const FormattedTime = props => (

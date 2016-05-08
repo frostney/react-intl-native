@@ -1,6 +1,6 @@
 {
   "name": "react-intl-native",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "Convenience components for react-intl's `format*` API in React Native",
   "main": "dist/react-intl-native.js",
   "jsnext:main": "dist/react-intl-native.es2015.js",
@@ -79,7 +79,7 @@
     "react": "^0.14.8",
     "react-addons-test-utils": "^0.14.8",
     "react-dom": "^0.14.8",
-    "react-native": "^0.24.1",
+    "react-native": "^0.25.1",
     "rimraf": "^2.5.2",
     "rollup-babel-lib-bundler": "^2.5.5"
   }
