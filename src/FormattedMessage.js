@@ -1,10 +1,18 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes, isValidElement, createElement } from 'react';
 import { Text } from 'react-native';
 import Intl from 'react-intl';
 
 const FormattedMessage = props => (
   <Intl.FormattedMessage {...props}>
-    {localized => <Text style={props.style}>{localized}</Text>}
+    {(...nodes) => {
+      const newNodes = nodes.map((node) => {
+        if (!isValidElement(node)) {
+          return (<Text style={props.style}>{node}</Text>);
+        }
+        return node;
+      });
+      return createElement(Text, null, ...newNodes);
+    }}
   </Intl.FormattedMessage>
 );
 
