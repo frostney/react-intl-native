@@ -11,7 +11,7 @@ const FormattedMessage = props => (
         }
         return node;
       });
-      return createElement(Text, {style: props.style}, ...newNodes);
+      return createElement(Text, { style: props.style }, ...newNodes);
     }}
   </Intl.FormattedMessage>
 );
