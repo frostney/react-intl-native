@@ -1,24 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Text } from 'react-native';
-import Intl from 'react-intl';
+import * as Intl from 'react-intl';
 
 const FormattedNumber = props => {
   const style = props.style;
 
-  const formatOptions = {
-    localeMatcher: props.localeMatcher,
-    style: props.formatStyle,
-    currency: props.currency,
-    currencyDisplay: props.currencyDisplay,
-    useGrouping: props.useGrouping,
-    minimumIntegerDigits: props.minimumIntegerDigits,
-    minimumFractionDigits: props.minimumFractionDigits,
-    maximumFractionDigits: props.maximumFractionDigits,
-    minimumSignificantDigits: props.minimumSignificantDigits,
-    maximumSignificantDigits: props.maximumSignificantDigits,
-    value: props.value,
-  };
+  let formatOptions = {...props};
+  delete formatOptions.formatStyle
+  formatOptions.style=props.formatStyle
 
   return (
     <Intl.FormattedNumber {...formatOptions}>
@@ -28,18 +18,22 @@ const FormattedNumber = props => {
 };
 
 FormattedNumber.propTypes = {
-  style: PropTypes.any,
-  localeMatcher: PropTypes.any,
-  formatStyle: PropTypes.any,
-  currency: PropTypes.any,
-  currencyDisplay: PropTypes.any,
-  useGrouping: PropTypes.any,
-  minimumIntegerDigits: PropTypes.any,
-  minimumFractionDigits: PropTypes.any,
-  maximumFractionDigits: PropTypes.any,
-  minimumSignificantDigits: PropTypes.any,
-  maximumSignificantDigits: PropTypes.any,
-  value: PropTypes.any,
+    value: PropTypes.any.isRequired,
+    format: PropTypes.string,
+    children: PropTypes.func,
+    localeMatcher: PropTypes.oneOf(['best fit', 'lookup']),
+
+    style: PropTypes.any,
+    formatStyle: PropTypes.oneOf(['decimal', 'currency', 'percent']),
+    currency: PropTypes.string,
+    currencyDisplay: PropTypes.oneOf(['symbol', 'code', 'name']),
+    useGrouping: PropTypes.bool,
+
+    minimumIntegerDigits: PropTypes.number,
+    minimumFractionDigits: PropTypes.number,
+    maximumFractionDigits: PropTypes.number,
+    minimumSignificantDigits: PropTypes.number,
+    maximumSignificantDigits: PropTypes.number,
 };
 
 export default FormattedNumber;

@@ -1,7 +1,7 @@
 import React, { isValidElement, createElement } from 'react';
 import PropTypes from 'prop-types';
 import { Text } from 'react-native';
-import Intl from 'react-intl';
+import * as Intl from 'react-intl';
 
 const FormattedMessage = props => (
   <Intl.FormattedMessage {...props}>
@@ -19,6 +19,12 @@ const FormattedMessage = props => (
 
 FormattedMessage.propTypes = {
   style: PropTypes.any,
+  values: PropTypes.object,
+  tagName: PropTypes.string,
+  children: PropTypes.func,
+  id: PropTypes.string.isRequired,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  defaultMessage: PropTypes.string,
 };
 
 export default FormattedMessage;
