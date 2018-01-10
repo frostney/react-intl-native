@@ -1,4 +1,5 @@
-import React, { PropTypes, isValidElement, createElement } from 'react';
+import React, { isValidElement, createElement } from 'react';
+import PropTypes from 'prop-types';
 import { Text } from 'react-native';
 import Intl from 'react-intl';
 
