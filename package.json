@@ -1,6 +1,6 @@
 {
   "name": "react-intl-native",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Convenience components for react-intl's `format*` API in React Native",
   "main": "dist/react-intl-native.js",
   "jsnext:main": "dist/react-intl-native.es2015.js",
