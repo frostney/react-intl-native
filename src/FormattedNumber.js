@@ -18,6 +18,7 @@ const FormattedNumber = props => {
     minimumSignificantDigits: props.minimumSignificantDigits,
     maximumSignificantDigits: props.maximumSignificantDigits,
     value: props.value,
+    format: props.format
   };
 
   return (
@@ -40,6 +41,7 @@ FormattedNumber.propTypes = {
   minimumSignificantDigits: PropTypes.any,
   maximumSignificantDigits: PropTypes.any,
   value: PropTypes.any,
+  format: PropTypes.any
 };
 
 export default FormattedNumber;
