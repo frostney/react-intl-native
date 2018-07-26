@@ -17,7 +17,7 @@ $ npm install react-intl-native
 Wrap your main component inside `react-intl`s `IntlProvider` like you would in your web application:
 
 ```javascript
-import IntlProvider from 'react-intl';
+import { IntlProvider } from 'react-intl';
 ```
 
 ```jsx
